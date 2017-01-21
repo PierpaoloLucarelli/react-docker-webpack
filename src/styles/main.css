@@ -1,6 +1,41 @@
 body{
     background: #eee;
     color: #777;
+    margin: 0;
+}
+
+
+/*NAV AREA*/
+
+.clearfix::after {
+   content: " ";
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+nav{
+    background: #e74c3c;
+    padding: 20px;
+}
+
+nav .buttons{
+    float: right;
+    background: #fff;
+    margin: 0 10px;
+    border: none;
+    border-radius: 2px;
+    padding: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+nav .buttons:hover{
+    opacity: 0.9;
+}
+
+nav .buttons:focus{
+    outline: none;
 }
 
 /*LOGIN AREA*/

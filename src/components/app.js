@@ -1,4 +1,5 @@
 import React from 'react';
+import Nav from './nav/navbar';
 import SignupForm from './signup';
 
 export default class App extends React.Component{
@@ -6,17 +7,26 @@ export default class App extends React.Component{
     constructor(props){
         super(props);
         this.state = {
+            signupIsVisible: true,
             items: []
         };
     }
 
     render(){
+        console.log("rendering");
         return(
             <div>
-            <h1>Alydo</h1>
-            <SignupForm/>
+                <Nav handleClick={this.handleClick.bind(this)}/>
+                {this.state.signupIsVisible ? <SignupForm/> : null}
             </div>
         )
+    }
+
+    handleClick(){
+        console.log(this.state.signupIsVisible);
+        this.setState({
+            signupIsVisible: !this.state.signupIsVisible
+        });
     }
 
 }

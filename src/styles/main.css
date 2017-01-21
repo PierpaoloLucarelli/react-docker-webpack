@@ -1,0 +1,40 @@
+body{
+    background: #eee;
+    color: #777;
+}
+
+/*LOGIN AREA*/
+
+.signup{
+    max-width:350px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.signup .alydo-form input{
+    display: block;
+    width: 100%;
+    padding: 20px;
+    margin: 10px 0;
+    border: none;
+    color: #aaa;
+    font-size: 20px;
+}
+
+input[type=text], input[type=password] {
+    box-sizing : border-box;
+}
+
+.signup .alydo-form input:focus{
+    outline: none;
+}
+
+.signup .alydo-form input.red-btn{
+    background: #e74c3c;
+    padding: 20px;
+    color: #eee;
+    font-size: 20px;
+    color: #fff;
+    width: 100%;
+    cursor: pointer;
+}
